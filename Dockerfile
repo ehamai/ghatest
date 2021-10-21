@@ -16,8 +16,8 @@ RUN dotnet publish -c Debug -o /app
 FROM mcr.microsoft.com/dotnet/aspnet:6.0-alpine AS release
 
 ### if port is changed, also update value in Config
-EXPOSE 8080
-ENV ASPNETCORE_URLS=http://*:8080
+EXPOSE 80
+ENV ASPNETCORE_URLS=http://*:80
 WORKDIR /app
 
 ### copy the app
