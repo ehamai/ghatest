@@ -9,9 +9,6 @@ on:
       - master
   workflow_dispatch:
 
-permissions:
-  id-token: write
-
 jobs:
   build:
     runs-on: windows-latest
